@@ -3,7 +3,7 @@
 " cp vimrc ~/.vimrc
 
 " enable file type detection
-" filetype on
+filetype on
 
 " for Linux distros that disable filetype detection
 filetype plugin on
