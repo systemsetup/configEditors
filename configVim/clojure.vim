@@ -17,6 +17,9 @@ let b:did_ftplugin = 1
 
 "let b:undo_ftplugin = 'setlocal iskeyword< define< formatoptions< comments< commentstring< lispwords<'
 
+" Show line number
+set number
+
 setlocal iskeyword+=?,-,*,!,+,/,=,<,>,.,:,$
 
 " There will be false positives, but this is better than missing the whole set
