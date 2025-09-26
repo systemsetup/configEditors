@@ -29,7 +29,7 @@ function! Statusline()
   let status .= '%<%f %h%m%r'
   let status .= '%='
   let status .= ' ╠ '
-  let status .= '%-14.(%l,%c%V%)'
+  let status .= '%f'
   let status .= ' ╣ '
   let status .= ' %P'
   return status
