@@ -35,7 +35,7 @@ function! StatuslineColor()
   let status = ''
 
   " Red filename
-  let status .= '%1*%<%f*'
+  let status .= '%#User1#%<%f*'
   let status .= '%2*%m%r%h%*'
 
   " Yellow full path filename
