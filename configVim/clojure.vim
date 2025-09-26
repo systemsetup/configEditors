@@ -34,10 +34,20 @@ hi CursorLine ctermbg=237 cterm=NONE guibg=#000000 gui=NONE
 " Highlight cursor line underneath the cursor vertically.
 " set cursorcolumn
 
+" *********** Setting for indentations ***********
+" Set a single tab width to 4 columns.
+set tabstop=4
+
+" Use space characters instead of tabs.
+set expandtab
+
+" Automatically indent expressions in a clause to 4 spaces.
+set shiftwidth=4
+
+" *********** Settings for statusline ***********
 " Show statusline
 set laststatus=2
 
-" *********** Show current file and path ***********
 " Define custom highlight color groups
 hi User1 guifg=#ff0000 guibg=#1c1c1c " Red
 hi User2 guifg=#00ff00 guibg=#1c1c1c " Green
