@@ -23,12 +23,25 @@ set number
 " Show statusline
 set laststatus=2
 
-" Show current file and path
+" *********** Show current file and path ***********
+" Define custom highlight color groups
+hi User1 guifg=#ff0000 guibg=#1c1c1c " Red
+hi User2 guifg=#00ff00 guibg=#1c1c1c " Green
+hi User3 guifg=#ffff00 guibg=#1c1c1c " Yellow
+hi User4 guifg=#0000ff guibg=#1c1c1c " Blue
+hi User5 guifg=#ff00ff guibg=#1c1c1c " Magenta
+
 function! Statusline()
   let status = ''
+
+  " filename
+  let status .= '%1*'    " Red
   let status .= ' ╠ '    " The U+2560 character
   let status .= '%f'     " filename
   let status .= ' ╣ '    " The U+2563 character
+
+  " full path filename
+  let status .= '%3*'    " Yellow
   let status .= ' %F'    " Filename with full path
   return status
 endfunction
