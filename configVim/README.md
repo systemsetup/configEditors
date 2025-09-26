@@ -17,3 +17,6 @@ Aside: For more instructions on how to create multiple subdirectories at *differ
 
 ## 4. Copy the syntax (vim) files for specific languages
 `cp <language>.vim /usr/share/vim/vimfiles/syntax/<language>.vim`
+
+**NOTE:**
+* `:!echo $VIMRUNTIME` to get the `$VIMRUNTIME` path
