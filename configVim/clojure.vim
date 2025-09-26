@@ -34,11 +34,13 @@ function! Statusline()
   return status
 endfunction
 
-set statusline=
-set statusline+=\ %!Statusline()
-set statusline+=\ %f
-set statusline+=\ %F
-set statusline+=\ %m
+set statusline=%!Statusline()
+
+" set statusline=
+" set statusline+=\ %!Statusline()
+" set statusline+=\ %f
+" set statusline+=\ %F
+" set statusline+=\ %m
 
 " Automatically wrap when beyond the screen
 set wrap
