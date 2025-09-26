@@ -27,9 +27,8 @@ set wrap
 syntax on
 
 " Highlight cursor line underneath the cursor horizontally.
-" hi CursorLine term=bold cterm=bold guibg=Grey40
 hi CursorLine ctermbg=gray guibg=gray
-set cursorline
+" set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
 " set cursorcolumn
