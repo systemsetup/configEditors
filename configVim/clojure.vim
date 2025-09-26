@@ -30,7 +30,7 @@ syntax on
 " hi CursorLine ctermfg=0 ctermbg=7 guibg=#d0d0d0
 " hi CursorLine ctermfg=0 guibg=#eeeeee
 set cursorline
-hi CursorLine ctermbg=236 cterm=NONE guibg=#bcbcbc gui=NONE
+hi CursorLine ctermbg=236 cterm=NONE guibg=#ffffff gui=NONE
 " hi CursorLineNr ctermfg=yellow ctermbg=236 guifg=yellow guibg=#363636
 
 " Highlight cursor line underneath the cursor vertically.
