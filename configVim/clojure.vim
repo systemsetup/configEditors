@@ -20,6 +20,9 @@ let b:did_ftplugin = 1
 " Show line number
 set number
 
+" Automatically wrap when beyond the screen
+set wrap
+
 setlocal iskeyword+=?,-,*,!,+,/,=,<,>,.,:,$
 
 " There will be false positives, but this is better than missing the whole set
