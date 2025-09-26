@@ -34,15 +34,13 @@ hi User5 guifg=#ff00ff guibg=#1c1c1c " Magenta
 function! Statusline()
   let status = ''
 
-  " filename
-  let status .= '%1*'    " Red
-  let status .= ' ╠ '    " The U+2560 character
+  " Red filename
+  let status .= '%1* ╠ ' " The U+2560 character
   let status .= '%f'     " filename
-  let status .= ' ╣ '    " The U+2563 character
+  let status .= ' ╣ *'   " The U+2563 character
 
-  " full path filename
-  let status .= '%3*'    " Yellow
-  let status .= ' %F'    " Filename with full path
+  " Yellow full path filename
+  let status .= '%3* %F*'  " Filename with full path
   return status
 endfunction
 
