@@ -26,10 +26,10 @@ set laststatus=2
 " Show current file and path
 function! Statusline()
   let status = ''
-  let status .= ' ╠ '
-  let status .= '%f'
-  let status .= ' ╣ '
-  let status .= ' %F'
+  let status .= ' ╠ '    " The U+2560 character
+  let status .= '%f'     " filename
+  let status .= ' ╣ '    " The U+2563 character
+  let status .= ' %F'    " Filename with full path
   return status
 endfunction
 
