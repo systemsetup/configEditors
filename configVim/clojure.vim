@@ -29,7 +29,7 @@ syntax on
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 " hi CursorLine term=bold cterm=bold guibg=Grey40
-hi CursorLine guibg=Grey40
+hi CursorLine cterm=236 guibg=#303030
 
 " Highlight cursor line underneath the cursor vertically.
 " set cursorcolumn
