@@ -35,6 +35,8 @@ hi CursorLine ctermbg=237 cterm=NONE guibg=#000000 gui=NONE
 " set cursorcolumn
 
 " *********** Setting for indentations ***********
+set autoindent
+
 " Set a single tab width to 4 columns.
 set tabstop=4
 
