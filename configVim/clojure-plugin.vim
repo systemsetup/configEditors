@@ -26,6 +26,8 @@ set wrap
 " Turn syntax highlighting on.
 syntax on
 
+set syntax=clojure
+
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 hi CursorLine ctermbg=237 cterm=NONE guibg=#000000 gui=NONE
