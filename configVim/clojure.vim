@@ -26,7 +26,6 @@ set laststatus=2
 " Show current file and path
 function! Statusline()
   let status = ''
-  let status .= '%<%f %h%m%r'
   let status .= ' ╠ '
   let status .= '%f'
   let status .= ' ╣ '
