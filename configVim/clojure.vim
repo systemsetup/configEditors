@@ -25,9 +25,9 @@ set laststatus=2
 
 " Show relative path of the current file
 set statusline=
-set statusline+=\ %\u2554
+set statusline+=\ %"\u2554"
 set statusline+=\ %f
-set statusline+=\ %\u255D
+set statusline+=\ %"\u255D"
 set statusline+=\ %F
 set statusline+=\ %m
 
