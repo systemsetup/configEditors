@@ -52,10 +52,11 @@ function! Statusline()
   let status .= '%f'     " filename
   let status .= ' ╣ '    " The U+2563 character
   let status .= ' %F'    " Filename with full path
+  let status .= '%c%V'   " line/column info
   return status
 endfunction
 
-set statusline=%!StatuslineColor()
+set statusline=%!Statusline()
 
 " set statusline=
 " set statusline+=\ %!Statusline()
