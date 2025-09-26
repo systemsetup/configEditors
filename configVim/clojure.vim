@@ -41,6 +41,8 @@ set statusline=%!Statusline()
 " set statusline+=\ %F
 " set statusline+=\ %m
 
+hi User1 ctermbg=green ctermfg=red   guibg=green guifg=redhi User2 ctermbg=red   ctermfg=blue  guibg=red   guifg=bluehi User3 ctermbg=blue  ctermfg=green guibg=blue  guifg=green
+
 " Automatically wrap when beyond the screen
 set wrap
 
