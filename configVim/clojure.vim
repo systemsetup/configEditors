@@ -27,10 +27,12 @@ set wrap
 syntax on
 
 " Highlight cursor line underneath the cursor horizontally.
-" set cursorline
+color deset
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
+" set cursorcolumn
 
 " Show statusline
 set laststatus=2
