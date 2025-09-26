@@ -31,21 +31,31 @@ hi User3 guifg=#ffff00 guibg=#1c1c1c " Yellow
 hi User4 guifg=#0000ff guibg=#1c1c1c " Blue
 hi User5 guifg=#ff00ff guibg=#1c1c1c " Magenta
 
-function! Statusline()
+function! StatuslineColor()
   let status = ''
 
   " Red filename
   let status .= '%1*%<%f'
-  let status .= '%1* ╠ ' " The U+2560 character
-  let status .= '%f'     " filename
-  let status .= ' ╣ *'   " The U+2563 character
+  let status .= '%2*%m%r%h%*'
 
   " Yellow full path filename
-  let status .= '%3* %F*'  " Filename with full path
+  let status .= '%='
+  let status .= '%3*╠%*'
+  let status .= '%4* %1,%c%V %*'
+  let status .= '%5* %P%*'
   return status
 endfunction
 
-set statusline=%!Statusline()
+function! Statusline()
+  let status = ''
+  let status .= ' ╠ '    " The U+2560 character
+  let status .= '%f'     " filename
+  let status .= ' ╣ '    " The U+2563 character
+  let status .= ' %F'    " Filename with full path
+  return status
+endfunction
+
+set statusline=%!StatuslineColor()
 
 " set statusline=
 " set statusline+=\ %!Statusline()
