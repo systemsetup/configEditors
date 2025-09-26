@@ -25,7 +25,7 @@ set laststatus=2
 
 " Show relative path of the current file
 set statusline=
-set statusline+=\ %f
+set statusline+=\ %F
 set statusline+=\ %m
 
 " Automatically wrap when beyond the screen
