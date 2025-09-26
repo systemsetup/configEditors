@@ -35,6 +35,7 @@ function! Statusline()
   let status = ''
 
   " Red filename
+  let status .= '%1*%<%f'
   let status .= '%1* ╠ ' " The U+2560 character
   let status .= '%f'     " filename
   let status .= ' ╣ *'   " The U+2563 character
