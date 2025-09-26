@@ -26,6 +26,12 @@ set wrap
 " Turn syntax highlighting on.
 syntax on
 
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
 " Show statusline
 set laststatus=2
 
