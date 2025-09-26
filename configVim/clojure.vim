@@ -20,6 +20,9 @@ let b:did_ftplugin = 1
 " Show line number
 set number
 
+" Show statusline
+set laststatus=2
+
 " Automatically wrap when beyond the screen
 set wrap
 
