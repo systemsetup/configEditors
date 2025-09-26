@@ -27,7 +27,7 @@ set wrap
 syntax on
 
 " Highlight cursor line underneath the cursor horizontally.
-color desert
+" color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
