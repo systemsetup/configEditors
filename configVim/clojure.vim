@@ -57,7 +57,8 @@ function! Statusline()
   return status
 endfunction
 
-set statusline=%!StatuslineColor()
+" set statusline=%!StatuslineColor()
+set statusline=%#User1#hello\|%#User2#world
 
 " set statusline=
 " set statusline+=\ %!Statusline()
