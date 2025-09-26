@@ -20,6 +20,9 @@ let b:did_ftplugin = 1
 " Show line number
 set number
 
+" Automatically wrap when beyond the screen
+set wrap
+
 " Show statusline
 set laststatus=2
 
@@ -68,9 +71,6 @@ set statusline=%!Statusline()
 " set statusline+=\ %f
 " set statusline+=\ %F
 " set statusline+=\ %m
-
-" Automatically wrap when beyond the screen
-set wrap
 
 setlocal iskeyword+=?,-,*,!,+,/,=,<,>,.,:,$
 
