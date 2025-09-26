@@ -27,8 +27,6 @@ set wrap
 syntax on
 
 " Highlight cursor line underneath the cursor horizontally.
-" hi CursorLine ctermfg=0 ctermbg=7 guibg=#d0d0d0
-" hi CursorLine ctermfg=0 guibg=#eeeeee
 set cursorline
 hi CursorLine ctermbg=237 cterm=NONE guibg=#000000 gui=NONE
 " hi CursorLineNr ctermfg=yellow ctermbg=236 guifg=yellow guibg=#363636
