@@ -58,7 +58,11 @@ function! Statusline()
 endfunction
 
 " set statusline=%!StatuslineColor()
-set statusline=%#User1#hello\|%#User2#world
+
+hi Status1 guifg=#008080 guibg=#fabd2f
+hi Status2 guifg=#F6955B guibg=#38A89D
+
+set statusline=%#Status1#hello\|%#Status2#world
 
 " set statusline=
 " set statusline+=\ %!Statusline()
