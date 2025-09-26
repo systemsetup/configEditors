@@ -28,7 +28,7 @@ syntax on
 
 " Highlight cursor line underneath the cursor horizontally.
 " hi CursorLine ctermfg=0 ctermbg=7 guibg=#d0d0d0
-hi CursorLine ctermfg=0 ctermbg=7
+hi CursorLine ctermfg=0 guibg=#eeeeee
 set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
