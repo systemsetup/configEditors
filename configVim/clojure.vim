@@ -30,6 +30,7 @@ function! Statusline()
   let status .= '%='
   let status .= ' ╠ '
   let status .= '%-14.(%l,%c%V%)'
+  let status .= ' ╣ '
   let status .= ' %P'
   return status
 endfunction
