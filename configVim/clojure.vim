@@ -23,6 +23,9 @@ set number
 " Automatically wrap when beyond the screen
 set wrap
 
+" Turn syntax highlighting on.
+syntax on
+
 " Show statusline
 set laststatus=2
 
