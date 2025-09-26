@@ -23,11 +23,20 @@ set number
 " Show statusline
 set laststatus=2
 
-" Show relative path of the current file
+" Show current file and path
+function! Statusline()
+  let status = ''
+  let status .= '%<%f %h%m%r'
+  let status .= '%='
+  let status .= ' ╠ '
+  let status .= '%-14.(%l,%c%V%)'
+  let status .= ' %P'
+  return status
+endfunction
+
 set statusline=
-set statusline+=\ %<%f%h%m%r%=%b\ 0x%B\ \ %l,%c%V\ %P
+set statusline+=\ %!Statusline()
 set statusline+=\ %f
-set statusline+=\ %<%f%h%m%r%=%b\ 0x%B\ \ %l,%c%V\ %P
 set statusline+=\ %F
 set statusline+=\ %m
 
