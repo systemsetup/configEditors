@@ -53,7 +53,7 @@ function! Statusline()
   let status .= ' ╣ '    " The U+2563 character
   let status .= ' %F'    " Filename with full path
   let status .= '%='     " right align
-  let status .= '%c%V'   " line/column info
+  let status .= 'Line: %c; Column: %V'   " line/column info
   return status
 endfunction
 
