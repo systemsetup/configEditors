@@ -34,6 +34,7 @@ cp <language>.vim /usr/local/share/vim/vim91/syntax/<language>.vim
 
 ## 5. Create directories to store custom `.vim` files
 ```
+mkdir -p ~/.vim/ftplugin
 mkdir -p /usr/share/vim/vimfiles/ftplugin
 ```
 
