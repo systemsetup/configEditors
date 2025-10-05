@@ -2,9 +2,13 @@
 all about configuring Vim
 
 ## 1. First
-```cp vimrc ~/.vimrc```
+```
+cp vimrc ~/.vimrc
+```
 In FreeBSD
-```cp /usr/local/etc/vim/vimrc ~/.vimrc```
+```
+cp /usr/local/etc/vim/vimrc ~/.vimrc
+```
 
 ## 2. Create directories to store custom `.vim` files
 ```
