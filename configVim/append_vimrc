@@ -11,3 +11,5 @@ filetype plugin on    " for Linux distros that disable filetype detection
 " for all set column width
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9 guifg=white
 set colorcolumn=80
+
+syntax on             " enable syntax
