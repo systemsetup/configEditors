@@ -18,20 +18,26 @@ Open vim then
 ```
 :echo $VIMRUNTIME
 ```
+or `:!echo $VIMRUNTIME`.
 
-## 4. Create directories to store custom `.vim` files
+In our example the path returned is `/usr/local/share/vim/vim91`
+
+## 4. Copy the syntax (vim) files for specific languages
+For Clojure its syntax `clojure.vim` by default is in
+```
+/usr/local/share/vim/vim91/syntax/clojure.vim
+```
+or insert custom vim files by doing
+```
+cp <language>.vim /usr/local/share/vim/vim91/syntax/<language>.vim
+```
+
+## 5. Create directories to store custom `.vim` files
 ```
 mkdir -p /usr/share/vim/vimfiles/ftplugin
-mkdir -p /usr/share/vim/vimfiles/syntax
 ```
 
 Aside: For more instructions on how to create multiple subdirectories at *different levels* or at the *same level* refer to the article [How to Create Multiple Subdirectories with One Linux Command](https://www.howtogeek.com/275069/how-to-create-multiple-subdirectories-with-one-linux-command/).
 
-## 5. Copy the plugin files for specific languages
+## 6. Copy the plugin files for specific languages
 `cp <language>-plugin.vim /usr/share/vim/vimfiles/ftplugin/<language>.vim`
-
-## 6. Copy the syntax (vim) files for specific languages
-`cp <language>.vim /usr/share/vim/vimfiles/syntax/<language>.vim`
-
-**NOTE:**
-* `:!echo $VIMRUNTIME` to get the `$VIMRUNTIME` path
